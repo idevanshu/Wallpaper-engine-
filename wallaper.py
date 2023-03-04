@@ -4,8 +4,8 @@ import random
 from PIL import Image
 import os
 
-keywords = ['space','coding','code','setup','lamborghini']
-url = f"https://source.unsplash.com/random/1900x1080/?{random.choice(keywords)}"
+keywords = ['trees','wild','coding','code','setup','lamborghini','BMW','coder','nature']
+url = f"https://source.unsplash.com/random/3840x2160/?{random.choice(keywords)}"
 
 img = Image.open(requests.get(url, stream = True).raw)
 img.save('image.jpg')
