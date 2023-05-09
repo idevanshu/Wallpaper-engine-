@@ -11,7 +11,12 @@ CACHE_DIR = "cache"
 
 def get_img():
     try:
+<<<<<<< HEAD
         keywords = ['bugatti','hills','lamborghini','mercedes','bmw','moutains']
+=======
+        keywords = ['supercars','nature','hills']
+        keywords.sort()
+>>>>>>> 5b1753971fdb4ada1f4f14847777e8c3a93130bb
         url = f"https://source.unsplash.com/random/3840x2160/?{random.choice(keywords)}"
         # Generate a hash of the URL to use as the filename
         filename = hashlib.md5(url.encode()).hexdigest() + ".jpg"
